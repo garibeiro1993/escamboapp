@@ -72,4 +72,6 @@ group :development do
   gem 'lerolero_generator'
   #Pretty print your Ruby objects with style -- in full color and with proper indentation
   gem 'awesome_print'
+  #Validate, generate and format CPF/CNPJ numbers. Include command-line tools.
+  gem "cpf_cnpj"
 end
