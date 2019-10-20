@@ -4,6 +4,9 @@ class Ad < ActiveRecord::Base
 
   # searchkick
   #searchkick
+
+  # Scopes
+  scope :last_six, -> { limit(6).order(created_at: :desc) }
   
   # paperclip
   has_attached_file :picture, styles: { medium: "300x150#", thumb: "100x100>" }, default_url: "/images/:style/missing.png"
