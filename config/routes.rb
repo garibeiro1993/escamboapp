@@ -11,10 +11,15 @@ Rails.application.routes.draw do
 
   namespace :site do
     get 'home', to: 'home#index'
-  end
+  
+   namespace :profile do
+    resources :dashboard, only: [:index]
+    resources :ads, only: [:index, :edit, :update, :new, :create]
+   end
+end
 
   devise_for :admins, :skip => [:registrations]
-  devise_for :members
+  devise_for :members, controllers: { sessions: 'members/sessions'}
 
   root 'site/home#index'
 

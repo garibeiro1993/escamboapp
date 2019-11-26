@@ -55,7 +55,7 @@
         category_id: Código da categoria
         category: Categoria
         finish_date: Data de finalização
-        image: Imagem
+        picture: Imagem
         price: Preço
       profile_member:
         id: Código

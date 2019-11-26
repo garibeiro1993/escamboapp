@@ -25,6 +25,8 @@ gem 'pundit'
 gem "money-rails"
 #Intelligent search made easy with Rails and Elasticsearch https://searchkick.org
 gem 'searchkick'
+#jQuery UI for the Rails asset pipeline
+gem 'jquery-ui-rails'
 
 source 'https://rails-assets.org' do
    #BootboxJS
